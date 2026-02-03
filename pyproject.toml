@@ -1,0 +1,16 @@
+[project]
+name = "celery-sentinel-poll-repro"
+version = "0.1.0"
+description = "Minimal reproduction for Celery ForkProcess _sentinel_poll AttributeError"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "celery==5.6.2",
+    "redis>=5.0",
+]
+
+[project.optional-dependencies]
+dev = ["ruff"]
+
+[tool.uv]
+dev-dependencies = []
